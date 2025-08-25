@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <section class="web-technologies">
+            <h1>Panorama of Web Technologies</h1>
+            <p>Explore the various technologies that power the web today.</p>
+            <input type="text" id="search" placeholder="Search technologies..." />
+            <div id="technologies-container">
+                <div class="technology-card" data-tech="HTML">
+                    <h2>HTML</h2>
+                    <p>HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser.</p>
+                </div>
+                <div class="technology-card" data-tech="CSS">
+                    <h2>CSS</h2>
+                    <p>Cascading Style Sheets, a style sheet language used for describing the presentation of a document written in HTML or XML.</p>
+                </div>
+                <div class="technology-card" data-tech="JavaScript">
+                    <h2>JavaScript</h2>
+                    <p>A high-level, dynamic, untyped, and interpreted programming language, commonly used to create interactive effects within web browsers.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

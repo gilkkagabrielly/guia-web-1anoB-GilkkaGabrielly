@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart of a Complete Web Project</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+       
+        <div id="header-placeholder"></div>
+    </header>
+
+    <main>
+        <section class="flowchart-section">
+            <h1>Flowchart of a Complete Web Project</h1>
+            <div class="flowchart-container">
+                <img src="../assets/images/flowchart.svg" alt="Flowchart of a Complete Web Project" usemap="#flowchartmap">
+                <map name="flowchartmap">
+                    <area shape="rect" coords="34,44,270,350" alt="Planning" title="Planning Phase">
+                    <area shape="rect" coords="290,44,550,350" alt="Design" title="Design Phase">
+                    <area shape="rect" coords="34,370,270,680" alt="Development" title="Development Phase">
+                    <area shape="rect" coords="290,370,550,680" alt="Testing" title="Testing Phase">
+                </map>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+       
+        document.getElementById('header-placeholder').innerHTML = await (await fetch('../components/header.html')).text();
+        document.getElementById('footer-placeholder').innerHTML = await (await fetch('../components/footer.html')).text();
+    </script>
+</body>
+</html>
